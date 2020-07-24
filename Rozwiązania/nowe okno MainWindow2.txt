@@ -1,0 +1,18 @@
+W QT tworzymy nową klase formularza .ui :
+Nowy plik lub projekt / Qt / Klasa formularza QT Designer / MainWindow / wpisujemy nowa nazwe klasy np MainWindows2
+
+------------------------------
+w mainwindow.h :
+#include "mainwindow2.h"
+...
+private:
+    MainWindow2 * noweOkno;
+
+------------------------------
+w mainwindow.cpp :
+w konstruktorze :
+	noweOkno = new MainWindow2(this);	//  bez this nowe okno nie zamknie się po zamknieciu glownego
+w destruktorze :
+	delete noweOkno;
+wywołanie :
+	noweOkno.show();
