@@ -1,0 +1,6 @@
+    QMessageBox msgBox;
+    msgBox.setIconPixmap(QPixmap(":/img/icon.png"));
+    msgBox.setDetailedText("Gra powstała dla zabawy :)\n\nNie jest to zwykły tetris jaki znamy. Spadające bloki składają się z kamieni i piasku. Bloki z piasku po zetknięciu z podłożem dalej spadają dając dodatkowe punkty. Możesz także grać na kilku poziomach trudności i zmieniać je w trakcie gry. Trudne poziomy dają oczywiście dodatkowe punkty.\nMiłej zabawy.");
+    msgBox.setWindowTitle("ttt");
+    msgBox.setText("hello");
+    msgBox.exec();
