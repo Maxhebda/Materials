@@ -1,0 +1,30 @@
+D:\VS_project\Ogolne\Ogolne\bin\Debug\Ogolne.exe.config
+D:\VS_project\Ogolne\Ogolne\bin\Debug\Ogolne.exe
+D:\VS_project\Ogolne\Ogolne\bin\Debug\Ogolne.pdb
+D:\VS_project\Ogolne\Ogolne\obj\Debug\Ogolne.csprojAssemblyReference.cache
+D:\VS_project\Ogolne\Ogolne\obj\Debug\MainWindow.g.cs
+D:\VS_project\Ogolne\Ogolne\obj\Debug\App.g.cs
+D:\VS_project\Ogolne\Ogolne\obj\Debug\Ogolne_MarkupCompile.cache
+D:\VS_project\Ogolne\Ogolne\obj\Debug\Ogolne_MarkupCompile.lref
+D:\VS_project\Ogolne\Ogolne\obj\Debug\MainWindow.baml
+D:\VS_project\Ogolne\Ogolne\obj\Debug\Ogolne.g.resources
+D:\VS_project\Ogolne\Ogolne\obj\Debug\Ogolne.Properties.Resources.resources
+D:\VS_project\Ogolne\Ogolne\obj\Debug\Ogolne.csproj.GenerateResource.cache
+D:\VS_project\Ogolne\Ogolne\obj\Debug\Ogolne.csproj.CoreCompileInputs.cache
+D:\VS_project\Ogolne\Ogolne\obj\Debug\Ogolne.exe
+D:\VS_project\Ogolne\Ogolne\obj\Debug\Ogolne.pdb
+C:\Users\Lenovo\Desktop\Materialy na GitHub\nauka C#\00 Przyklady !!!\WPF, przycisk w xamp i w c#\Ogolne\bin\Debug\Ogolne.exe.config
+C:\Users\Lenovo\Desktop\Materialy na GitHub\nauka C#\00 Przyklady !!!\WPF, przycisk w xamp i w c#\Ogolne\bin\Debug\Ogolne.exe
+C:\Users\Lenovo\Desktop\Materialy na GitHub\nauka C#\00 Przyklady !!!\WPF, przycisk w xamp i w c#\Ogolne\bin\Debug\Ogolne.pdb
+C:\Users\Lenovo\Desktop\Materialy na GitHub\nauka C#\00 Przyklady !!!\WPF, przycisk w xamp i w c#\Ogolne\obj\Debug\Ogolne.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Materialy na GitHub\nauka C#\00 Przyklady !!!\WPF, przycisk w xamp i w c#\Ogolne\obj\Debug\MainWindow.g.cs
+C:\Users\Lenovo\Desktop\Materialy na GitHub\nauka C#\00 Przyklady !!!\WPF, przycisk w xamp i w c#\Ogolne\obj\Debug\App.g.cs
+C:\Users\Lenovo\Desktop\Materialy na GitHub\nauka C#\00 Przyklady !!!\WPF, przycisk w xamp i w c#\Ogolne\obj\Debug\Ogolne_MarkupCompile.cache
+C:\Users\Lenovo\Desktop\Materialy na GitHub\nauka C#\00 Przyklady !!!\WPF, przycisk w xamp i w c#\Ogolne\obj\Debug\Ogolne_MarkupCompile.lref
+C:\Users\Lenovo\Desktop\Materialy na GitHub\nauka C#\00 Przyklady !!!\WPF, przycisk w xamp i w c#\Ogolne\obj\Debug\MainWindow.baml
+C:\Users\Lenovo\Desktop\Materialy na GitHub\nauka C#\00 Przyklady !!!\WPF, przycisk w xamp i w c#\Ogolne\obj\Debug\Ogolne.g.resources
+C:\Users\Lenovo\Desktop\Materialy na GitHub\nauka C#\00 Przyklady !!!\WPF, przycisk w xamp i w c#\Ogolne\obj\Debug\Ogolne.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Materialy na GitHub\nauka C#\00 Przyklady !!!\WPF, przycisk w xamp i w c#\Ogolne\obj\Debug\Ogolne.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\Materialy na GitHub\nauka C#\00 Przyklady !!!\WPF, przycisk w xamp i w c#\Ogolne\obj\Debug\Ogolne.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Materialy na GitHub\nauka C#\00 Przyklady !!!\WPF, przycisk w xamp i w c#\Ogolne\obj\Debug\Ogolne.exe
+C:\Users\Lenovo\Desktop\Materialy na GitHub\nauka C#\00 Przyklady !!!\WPF, przycisk w xamp i w c#\Ogolne\obj\Debug\Ogolne.pdb
