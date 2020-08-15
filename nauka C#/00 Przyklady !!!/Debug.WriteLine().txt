@@ -1,0 +1,6 @@
+using System.Diagnostics;
+
+
+
+int a=12;
+Debug.WriteLine("hello kakaka" + a);
