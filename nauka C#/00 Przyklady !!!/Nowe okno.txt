@@ -1,0 +1,9 @@
+nowe okno :
+-prawym klawiszem na projekt
+-dodaj nowy element
+-wybieramy z listy "Windows (WPF)" i nazywamy np "Elo.xaml"
+-edytujemy sobie w WPF / dodajemy kontrolki itp
+-wywołanie w C# :
+
+Elo nowe_okno = new Elo();
+nowe_okno.show();
