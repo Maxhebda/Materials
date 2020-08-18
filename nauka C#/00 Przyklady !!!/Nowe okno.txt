@@ -3,7 +3,28 @@ nowe okno :
 -dodaj nowy element
 -wybieramy z listy "Windows (WPF)" i nazywamy np "Elo.xaml"
 -edytujemy sobie w WPF / dodajemy kontrolki itp
--wywołanie w C# :
 
+-wywołanie w C# :
+------------------------------
 Elo nowe_okno = new Elo();
-nowe_okno.show();
+nowe_okno.Show();		//mozna przeskakiwac miedzy oknami
+nowe_okno.ShowDialog();		//okno modalne - glowne i nie mozna przeskoczyc
+
+
+
+-pobieranie danych
+------------------------------
+nowe_okno.ShowDialog();
+string dane = nowe_okno.EditBlok1.Text;		//EditBlok1 to kontrolka EditBlok w xaml
+
+
+-pobieranie danych2
+------------------------------
+// w nowe_okno.xaml.cs tworzymy nowa metode :
+public string odczytaj()
+{
+	base.ShowDialog();			//otwieramy nowe okno
+	return this.EditBlok1.Text;		//zwracamy dane po zamknieciu
+}
+// w glownym programie odczytujemy :
+string dane = nowe_okno.odczytaj();
