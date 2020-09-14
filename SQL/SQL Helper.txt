@@ -1,0 +1,125 @@
+### Konwersja
+CAST (wyrazenie AS typDanych)
+
+
+### Pomiedzy
+...
+WHERE id BETWEEN 2 AND 4
+Where id NOT BETWEEN 2 and 4
+
+
+### W (znajdzuje się w..)
+WHERE id IN (2,3,5)
+WHERE name IN ('Ola','Maria')
+
+
+### ISNULL  , czy jest null, konwersja null na zero
+SELECT
+ISNULL (Waga, 0) AS 'Waga'
+FROM Produkkty
+
+
+### CASE
+SELECT
+CASE ID
+WHEN 1 THEN 'jeden'
+WHEN 2 THEN 'dwa'
+ELSE 'inne'
+END AS 'Identyfikator',
+drugaKolumna
+FROM tabela
+
+SELECT * FROM klienci
+WHERE dochod > 
+CASE
+WHEN Plec = 'M' AND Wiek > 50 THEN 75000
+WHEN Plec = 'K' AND Wiek > 35 THEN 60000
+ELSE 50000
+END
+
+
+### Duplikaty
+SELECT DISTINCT WykonawcaUtworu
+FROM TytulyUtworow
+ORDER BY WykonawcaUtworu
+
+
+### Funkcje znakowe LEFT, RIGHT, SUBSTRING, LTRIM, RTRIM, UPPER, LOWER
+wybieranie znakow, usuwanie spacji, duze litery, male litery, 
+SELECT LEFT('Ala ma kota',3) AS wynik					//zwroci ALA
+SELECT SUBSTRING ('czarnaowca',7,4 AS Wynik				//zwroci owca
+SELECT LTRIM('      napis' AS Wynik					//zwroci napis
+
+
+### Fukncje Daty
+SELECT GETDATE()				//zwraca aktualna date
+DATEPART(month, '2017-03-12')			//zwroci 3
+DATEPART(day, '2017-03-12')			//zwroci 12
+DATEPART(week, '2017-03-12')			//zwroci 11
+DATEPART(weekday, '2017-03-12')			//zwroci 7 czyli sobota
+
+DATEDIFF (ElementDaty, DataPoczatkowa, DataKoncowa)
+DATEDIFF (day, '2017-07-08', '2017-08-14')		//zwroci 37
+
+
+### Funkcje liczbowe
+ROUND (Liczba, IleMiejscPoPrzecinku)
+RAND ()							//losowanie od 0.0 do 0.99999
+PI()
+POWER(Liczba, wykladnik)				//potega, potegowanie 
+
+
+### Funkcje agregujace  , suma, srednia, minimun, maksimum
+SELECT
+SUM (Oplata) AS 'sumaryczna oplata za silownie'
+FROM Oplaty
+WHERE RodzajOplaty = 'Silownia'
+
+SELECT
+AVG (LiczbaPunktow) AS 'Srednia punktow',
+MIN (LiczbaPunktow) AS 'najmniejsza liczba punktow',
+MAX (LiczbaPunktow) AS 'najwieksza liczba punktow'
+FROM Punktacja
+WHERE OcenianaPraca = 'sprawdzian'
+
+
+### Funkcja agregujaca COUNT, zliczanie
+SELECT
+COUNT (*) AS 'liczba wierszy z oceniania praca domowa'	//wybiera dane ze wszystkich kolumn z wierszy ograniczonych warunkiem where
+FROM Punktacja
+WHERE OcenianaPraca = 'praca domowa'
+
+SELECT (DISTINCT RodzajOplaty) AS 'liczba rodzajow oplaty'
+FROM oplaty
+
+
+### Grupowanie GROUP BY
+SELECT
+OpenianaPraca AS 'Oceniana Praca',
+Uczen AS 'Uczen',
+AVG (LiczbaPunktow) AS 'Średnia liczba punktow'
+FROM Punktacja
+GROUP BY OcanianaPraca, Uczen				//musimy dodac do group by wszystko co wyswietlamy w select
+ORDER BY OcenianaPraca, Uczen
+
+
+### Grupowanie GROUP BY i HAVING
+SELECT
+OpenianaPraca AS 'Oceniana Praca',
+Uczen AS 'Uczen',
+AVG (LiczbaPunktow) AS 'Średnia liczba punktow'
+FROM Punktacja
+WHERE OcenianaPraca = 'sprawdzian'
+GROUP BY OcenianaPraca, Uczen
+HAVING AVG (LiczbaPunktow) > 70
+ORDER BY Uczen
+
+
+### Funkcje Rankingowe ROW_NUMBER
+SELECT							//doda kolumne numer wiersza i ponumeruje posortowane dane wg wagi
+ROW_NUMBER() OVER (ORDER BY Waga) AS 'numer wiersza',
+Imie AS 'imie'
+Waga AS 'waga'
+FROM osoba
+ORDER BY Waga
+
