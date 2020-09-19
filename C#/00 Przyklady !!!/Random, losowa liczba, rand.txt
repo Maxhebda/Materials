@@ -1,0 +1,5 @@
+Random rand = new Random();
+
+int x = rand.Next(0,5);	         //x =  0,1,2,3,4 
+
+byte y = (byte)rand.Next(0,5);	 //y =  0,1,2,3,4 

@@ -49,6 +49,11 @@ wybieranie znakow, usuwanie spacji, duze litery, male litery,
 SELECT LEFT('Ala ma kota',3) AS wynik					//zwroci ALA
 SELECT SUBSTRING ('czarnaowca',7,4 AS Wynik				//zwroci owca
 SELECT LTRIM('      napis' AS Wynik					//zwroci napis
+REPLACE('Ala ma kota','Ala','Ewa')					//zamien
+SPACE(liczba)+'tekst'							//liczba spacji
+REVERSE('tekst')							//odwracanie = 'tsket'
+REPLICATE('tekst',2)							//duplikuje wyraz
+LEN('tekst')								//dlugosc wyrazu
 
 
 ### Fukncje Daty
@@ -62,11 +67,15 @@ DATEDIFF (ElementDaty, DataPoczatkowa, DataKoncowa)
 DATEDIFF (day, '2017-07-08', '2017-08-14')		//zwroci 37
 
 
-### Funkcje liczbowe
-ROUND (Liczba, IleMiejscPoPrzecinku)
+### Funkcje liczbowe, zaokraglenie, losowanie, potega, wartosc bezwzgledna
+ROUND (Liczba, IleMiejscPoPrzecinku)			//zaokraglenie
 RAND ()							//losowanie od 0.0 do 0.99999
 PI()
 POWER(Liczba, wykladnik)				//potega, potegowanie 
+ABS(liczba)						//wartosc bezwzgledna
+CEILING(1.01)						//zaokraglenie w gore  = 2
+FLOOR(1.01)						//zaokraglenie w dol   = 1
+SQRT()							//pierwiastek
 
 
 ### Funkcje agregujace  , suma, srednia, minimun, maksimum
@@ -122,4 +131,11 @@ Imie AS 'imie'
 Waga AS 'waga'
 FROM osoba
 ORDER BY Waga
+
+
+### Komentarz
+-- komentarz linii
+/*
+komentarz wieloliniowy
+*/
 
