@@ -1,0 +1,41 @@
+przykładowa aplikacja windowsForm c#
+
+local Serwer: LENOVOMAX\SQLEXPRESS
+Authentication Method: Windows Authentication
+Base Name: Northwind
+--------------------------------------------------------------------
+
+1. klikamy na projekt prawym -> new item -> DataSet
+2. dodajemy tableAdaptery -> przeciagamy na okno DataSet1.xsd
+	CustometrsTableAdapter i OrdersTableAdapter
+	Edytujemy np:
+	"
+	SELECT *
+	FROM     Customers
+	WHERE  (CustomerID LIKE @CustomerID)
+	"
+	"
+	SELECT *
+	FROM     Orders
+	WHERE  (CustomerID LIKE @CustomerID)
+	"
+3. uzupelniamy design form1 o combobox i 2 x dataGridView
+4. wpisujemy ladowanie do combobox przy starcie aplikacji danych z bazy :
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'northwindDataSet.Customers' table. You can move, or remove it, as needed.
+            this.customersTableAdapter.Fill(this.northwindDataSet.Customers);
+        }
+5 tworzymy metodę odczytujaca dane :
+        private void downloadData(string customerID)
+        {
+            DataSet1 myData = new DataSet1();						//deklar / pobieranie danych z bazy
+            CustomersTableAdapter customersTableAdapter = new CustomersTableAdapter();	//deklar tableadaptera
+            OrdersTableAdapter ordersTableAdapter = new OrdersTableAdapter();		//deklar tableadaptera
+
+            customersTableAdapter.Fill(myData.Customers, customerID);			//wypelnienie 
+            ordersTableAdapter.Fill(myData.Orders, customerID);				//wypelnienie 
+
+            dataGridView1.DataSource = myData.Tables["Customers"];			//wyswietlenie
+            dataGridView2.DataSource = myData.Tables["Orders"];
+        }

@@ -1,0 +1,10 @@
+D:\VS_project\Zamowienia_WinForms\Zamowienia_WinForms\bin\Debug\Zamowienia_WinForms.exe.config
+D:\VS_project\Zamowienia_WinForms\Zamowienia_WinForms\bin\Debug\Zamowienia_WinForms.exe
+D:\VS_project\Zamowienia_WinForms\Zamowienia_WinForms\bin\Debug\Zamowienia_WinForms.pdb
+D:\VS_project\Zamowienia_WinForms\Zamowienia_WinForms\obj\Debug\Zamowienia_WinForms.csprojAssemblyReference.cache
+D:\VS_project\Zamowienia_WinForms\Zamowienia_WinForms\obj\Debug\Zamowienia_WinForms.Form1.resources
+D:\VS_project\Zamowienia_WinForms\Zamowienia_WinForms\obj\Debug\Zamowienia_WinForms.Properties.Resources.resources
+D:\VS_project\Zamowienia_WinForms\Zamowienia_WinForms\obj\Debug\Zamowienia_WinForms.csproj.GenerateResource.cache
+D:\VS_project\Zamowienia_WinForms\Zamowienia_WinForms\obj\Debug\Zamowienia_WinForms.csproj.CoreCompileInputs.cache
+D:\VS_project\Zamowienia_WinForms\Zamowienia_WinForms\obj\Debug\Zamowienia_WinForms.exe
+D:\VS_project\Zamowienia_WinForms\Zamowienia_WinForms\obj\Debug\Zamowienia_WinForms.pdb
